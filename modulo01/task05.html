@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Task 05</title>
+</head>
+<body>
+
+    <script>
+
+        var usuarios = [
+        {
+            nome: "Diego",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+        },
+        {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }
+        ];
+
+        function exibeHabilidades(pessoas){
+            
+            for(let sentenca of pessoas){
+                console.log("O "+sentenca.nome+" possui as habilidades "+sentenca.habilidades);
+            }
+            
+
+        }
+    
+        exibeHabilidades(usuarios);
+  
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Task 01</title>
+    </head>
+    <body>
+        <div id="teste">
+            <input type="text" id="texto">
+            <button id="btnTexto">Exibe Texto</button>
+            <button id="btnLink">Adiciona link</button>
+        </div>
+
+        <script>
+      
+                
+                var texto = document.getElementById('texto');
+                var botaoTexto = document.getElementById('btnTexto');
+                var botaoLink  = document.getElementById('btnLink');
+
+                botaoTexto.onclick = function(){
+                    alert(texto.value);
+                }
+
+                botaoLink.onclick = function(){
+                    criarLink();
+                }
+                
+                function criarLink(){
+                    var link = document.createElement('a');
+                    link.setAttribute('href','http://google.com');
+                    var texto = document.createTextNode('Acessar');
+                    link.appendChild(texto);
+                    var local = document.querySelector('#teste');
+                    local.appendChild(link);
+                }
+
+        </script>
+    </body>
+</html>

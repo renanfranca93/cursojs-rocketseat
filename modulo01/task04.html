@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Task 04</title>
+</head>
+<body>
+
+    <script>
+
+    function experiencia(anos) {
+        var nivel;
+
+        if (anos <=1){
+            nivel = 'Iniciante';
+
+        }else if(anos >1 && anos <=3){
+            nivel = 'Intermediário';
+
+        }else if(anos >3 && anos <=6){
+            nivel = 'Avançado';
+
+        }else if(anos >=7){
+            nivel = 'Jedi';
+
+        }
+        
+        return nivel;
+
+    }
+    var anosEstudo = 7;
+    nivel = experiencia(anosEstudo);
+    console.log(nivel);
+    
+
+  
+    </script>
+
+</body>
+
+</html>

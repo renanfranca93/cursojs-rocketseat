@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Task 01</title>
+    </head>
+    <body>
+        <div id="tudo">
+            <button>Clique</button>
+        </div>
+       
+        <script>
+
+            var botao = document.querySelector('#tudo button');
+            botao.onclick = function(){
+
+                var quadrado = document.createElement('div');
+                quadrado.style.width = 100;
+                quadrado.style.height = 100;
+                quadrado.style.backgroundColor = 'red';
+                var local = document.querySelector('#tudo');
+                local.appendChild(quadrado);
+
+            }
+
+
+
+          
+        </script>
+    </body>
+</html>

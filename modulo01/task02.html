@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Task 02</title>
+</head>
+<body>
+
+    <script>
+        function pares(x, y) {
+
+            var numerosPares = [];
+
+            i=x;
+            for(i=x;i<=y;i++){
+                if((i%2)==0){
+                    //numerosPares[i]=i;
+                    numerosPares[i]=i;
+                    
+                }
+
+                i++;
+            }
+
+            var filtrado = numerosPares.filter(function (filtro) {
+             return filtro != null;
+            });
+        
+            return filtrado;
+
+
+        }
+        var x=32, y=321;
+        //console.log(pares(x, y));
+
+        document.write("Os números pares entre "+x+" e "+y+" são: "+pares(x, y));
+
+
+
+
+    </script>
+
+</body>
+
+</html>
