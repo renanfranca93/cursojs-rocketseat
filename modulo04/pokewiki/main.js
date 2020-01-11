@@ -97,7 +97,9 @@ axios.get('https://pokeapi.co/api/v2/pokemon/'+pokemon.value)
    
 })
 .catch(function(error){
-    console.warn(error);
+    local.innerHTML = '';
+    var msg = document.createTextNode('Pokemon desaparecido! Busque por outro!');  
+    local.appendChild(msg);
 });
 }
 
